@@ -103,14 +103,11 @@ export default function Home() {
   useEffect(() => {
     const temp: any[] = [];
     axios.get(`/data/proker.json`).then((res) => {
-      console.log(res.data.data);
       temp.push(res.data.data[2][4]);
       temp.push(res.data.data[2][0]);
       temp.push(res.data.data[4][0]);
       setEvent(temp);
     });
-
-    console.log(event);
   }, []);
 
   return (
