@@ -92,7 +92,7 @@ export default function ProkerDetailItem({
             <Carousel>
               <CarouselContent>
                 {assets
-                  .filter((e: any, key: any) => key >= 1)
+                  .filter((key: any) => key >= 1)
                   .map((asset: any, key: number) => (
                     <CarouselItem key={key} className="max-w-full">
                       <img
