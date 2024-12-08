@@ -54,6 +54,8 @@ export default function ProkerDetailItem({
   useEffect(() => {
     if (prokerDinas.length > 3) setPrograms(rndImage({ array: prokerDinas }));
     else setPrograms(prokerDinas);
+
+    console.log(dinas, assets);
   }, [prokerDinas]);
 
   return (
@@ -92,7 +94,7 @@ export default function ProkerDetailItem({
             <Carousel>
               <CarouselContent>
                 {assets
-                  .filter((key: any) => key >= 1)
+                  .filter((_: any, key: number) => key >= 1)
                   .map((asset: any, key: number) => (
                     <CarouselItem key={key} className="max-w-full">
                       <img

@@ -21,7 +21,7 @@ export default function ProkerDetail() {
           proker
         ) {
           return (
-            <section id="prokerDetail">
+            <section id="prokerDetail" key={key + proker["name"]}>
               <ProkerDetailItem
                 key={key}
                 name={proker["name"]}
