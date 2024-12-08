@@ -3,6 +3,7 @@ import { Button } from "../ui/button";
 import { useNavigate } from "react-router-dom";
 
 type Props = {
+  assets: string[];
   eventFormat: string;
   name: string;
   date: any;

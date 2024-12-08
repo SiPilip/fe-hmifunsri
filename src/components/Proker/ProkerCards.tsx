@@ -16,6 +16,8 @@ export default function ProkerCards({ dinas, item, nav }: Props) {
     if (item) {
       setProker(item || null);
     }
+
+    // console.log(proker);
   }, [item]);
 
   function showMoreItems() {
@@ -30,6 +32,7 @@ export default function ProkerCards({ dinas, item, nav }: Props) {
             .slice(0, sliced)
             .map((proker, key) => (
               <ProkerCardItem
+                assets={proker["assets"]}
                 key={key}
                 eventFormat={proker["eventFormat"]}
                 name={proker["name"]}
@@ -43,6 +46,7 @@ export default function ProkerCards({ dinas, item, nav }: Props) {
             .slice(0, sliced)
             .map((proker, key) => (
               <ProkerCardItem
+                assets={proker["assets"]}
                 key={key}
                 eventFormat={proker["eventFormat"]}
                 name={proker["name"]}
