@@ -1,5 +1,5 @@
 import { navItems } from "@/lib/link";
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import { cn } from "@/lib/utils";
 import { useLocation } from "react-router-dom";
 import { InstagramLogoIcon } from "@radix-ui/react-icons";
@@ -37,11 +37,21 @@ export default function Footer() {
       </div>
       <ul className="flex flex-col items-center space-y-4 md:items-start">
         <li className="text-xl font-medium">Contact Us</li>
-        <li className="flex items-center gap-2">
-          <InstagramLogoIcon className="size-6" /> <p>hmif.unsri</p>
+        <li className="hover:text-primary">
+          <Link
+            to={"https://www.instagram.com/hmif.unsri/"}
+            className="flex items-center gap-2"
+          >
+            <InstagramLogoIcon className="size-6" /> <p>hmif.unsri</p>
+          </Link>
         </li>
-        <li className="flex items-center gap-2">
-          <Mail className="size-6" /> <p>hmif.unsri@gmail.com</p>
+        <li className="hover:text-primary">
+          <Link
+            to={"https://www.instagram.com/hmif.unsri/"}
+            className="flex items-center gap-2"
+          >
+            <Mail className="size-6" /> <p>hmif.unsri@gmail.com</p>
+          </Link>
         </li>
       </ul>
       <ul className="flex flex-col items-center gap-4 md:items-start">

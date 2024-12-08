@@ -76,14 +76,14 @@ const images1 = [
   },
   {
     imageUrl: "img/home-about-2.png",
-    text: "Pelatihan Manajemen Organisasi",
+    text: "MinSoc",
   },
 ];
 
 const images2 = [
   {
     imageUrl: "img/home-about-3.png",
-    text: "MinSoc",
+    text: "Pelatihan Manajemen Organisasi",
   },
   {
     imageUrl: "img/home-about-4.png",
@@ -431,11 +431,10 @@ export default function Home() {
               Apakah HMIF hanya untuk mahasiswa berprestasi ?
             </AccordionTrigger>
             <AccordionContent>
-              YTidak. HMIF terbuka untuk semua mahasiswa Teknik Informatika,
-              baik yang memiliki prestasi akademik maupun yang ingin
-              mengembangkan kemampuan non-akademik. Tujuan HMIF adalah
-              memberikan wadah bagi semua mahasiswa untuk berkembang sesuai
-              minat dan bakatnya.
+              Tidak. HMIF terbuka untuk semua mahasiswa Teknik Informatika, baik
+              yang memiliki prestasi akademik maupun yang ingin mengembangkan
+              kemampuan non-akademik. Tujuan HMIF adalah memberikan wadah bagi
+              semua mahasiswa untuk berkembang sesuai minat dan bakatnya.
             </AccordionContent>
           </AccordionItem>
         </Accordion>
@@ -445,7 +444,7 @@ export default function Home() {
         className="relative -mx-5 flex items-center justify-center bg-[#74DBEF] px-5 py-8 md:-mx-12 md:bg-transparent md:px-12 xl:-mx-20 xl:px-20"
       >
         <img
-          src="img/hand-iphone.png"
+          src="img/hand-hmif.png"
           alt="hand-iphone"
           className="hidden w-1/2 md:block lg:w-2/5"
           data-aos="fade-up-right"
@@ -459,7 +458,10 @@ export default function Home() {
           <h1 className="text-2xl font-bold text-primary xl:text-4xl">
             Follow us on Instagram for the latest updates and fun activities!
           </h1>
-          <LinkPreview url="/about" className="flex items-center gap-2 text-xl">
+          <LinkPreview
+            url={"https://www.instagram.com/hmif.unsri/"}
+            className="flex items-center gap-2 text-xl"
+          >
             <Instagram className="size-8 text-primary" />{" "}
             <p className="font-medium text-primary">@hmif.unsri</p>
           </LinkPreview>
